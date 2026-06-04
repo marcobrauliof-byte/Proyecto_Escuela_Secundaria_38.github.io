@@ -1,0 +1,114 @@
+body{
+    margin:0;
+background: linear-gradient(#90CAF9, #F9A8D4);
+    padding: 80px 20px 100px 20px;   /* Ajusta el padding según necesites */
+    margin-bottom: 0;
+    position: relative;
+}
+.menu-btn{
+    position:fixed;
+    top:15px;
+    right:15px;
+    font-size:30px;
+    cursor:pointer;
+    background:none;
+    border:none;
+}
+
+.menu{
+    position:fixed;
+    top:0;
+    right:-250px;
+    width:250px;
+    height:100%;
+    background:#2563EB;
+    transition:0.5s;
+    padding-top:60px;
+}
+
+.menu a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:15px 20px;
+}
+
+.menu a:hover{
+    background:#00CCFF;
+}
+
+.menu.active{
+    right:0;
+}
+.imagenes{/*imagen taller*/
+    width: 250px;
+    position: relative;
+    left: 100px; /* Mueve a la derecha */
+    top: 218px;  /* Mueve hacia abajo */
+    transition:0.3s;
+}
+.imagenes:hover{
+   transform:scale(1.5);
+margin:auto;   
+}
+
+
+.imagen{/*LOGO*/
+    position: fixed; /* Se queda fija en la pantalla */
+    top: -30px;       /* Distancia desde arriba */
+    left: 5px;      /* Distancia desde la izquierda */
+    width: 250px;    /* Tamaño de la imagen */
+
+}
+.soldadura{
+    background-color:#FFB74D;
+    padding:20px;
+}
+
+.vestido{
+    background-color:#F8BBD0;
+    padding:20px;
+}
+
+.informatica{
+    background-color:#90CAF9;
+    padding:20px;
+}
+
+.ofimatica{
+    background-color:#A5D6A7;
+    padding:20px;
+}
+.tt{
+	    font-family: "Trebuchet MS", sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+	background:#7C3AED;
+		padding: 80px;
+	width:90%;
+border-radius:189px;
+  display: flex;
+    justify-content: center; 
+    align-items: center;     
+    height: 7vh;
+}
+
+.ti{/* TITULO */
+
+  display: flex;
+    justify-content: center; 
+    align-items: center;     
+    height: 9vh;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+	background:#E3BEE1;
+		padding: 100px;
+	width:auto;
+border-radius:auto;
+
+}
+.gif{
+	width:500px;
+	
+}

@@ -1,0 +1,105 @@
+@keyframes body{
+    0% {
+        --s-start-0: 10%;
+        --s-end-0: 30%;
+        --x-0: 2.2881652338788356%;
+        --c-0: hsla(171, 100%, 69%, 1);
+        --t-0: 0px;
+        --y-0: 2.7292413381123057%;
+    }
+
+    25% {
+        --s-start-0: 10%;
+        --s-end-0: 30%;
+        --x-0: 99.02306933317625%;
+        --c-0: hsla(277, 88%, 87%, 1);
+        --t-0: 0px;
+        --y-0: 1.7095094086021505%;
+    }
+
+    50% {
+        --s-start-0: 10%;
+        --s-end-0: 30%;
+        --x-0: 98.27114359172603%;
+        --c-0: hsla(277, 100%, 66%, 1);
+        --t-0: 0px;
+        --y-0: 96.85819892473118%;
+    }
+
+    75% {
+        --s-start-0: 10%;
+        --s-end-0: 30%;
+        --x-0: 2.883482563619227%;
+        --c-0: hsla(232, 100%, 68%, 1);
+        --t-0: 0px;
+        --y-0: 97.35719086021506%;
+    }
+
+    100% {
+        --s-start-0: 10%;
+        --s-end-0: 30%;
+        --x-0: 2.3001222313854854%;
+        --c-0: hsla(171, 100%, 69%, 1);
+        --t-0: 0px;
+        --y-0: 4.344198028673835%;
+    }
+}
+
+@property --s-start-0 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 10%
+}
+
+@property --s-end-0 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 30%
+}
+
+@property --x-0 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 2.2881652338788356%
+}
+
+@property --c-0 {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: hsla(171, 100%, 69%, 1)
+}
+
+@property --t-0 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 0px
+}
+
+@property --y-0 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 2.7292413381123057%
+}
+
+#body{
+    position: relative;
+    background: white
+}
+
+#body::after {
+    content: "";
+    position: absolute;
+    inset: -15px;
+    z-index: -1;
+    --x-0: 2.2881652338788356%;
+    --c-0: hsla(171, 100%, 69%, 1);
+    --t-0: 0px;
+    --y-0: 2.7292413381123057%;
+    background-color: hsla(0, 0, 0, 0);
+    background-image: radial-gradient(circle at var(--x-0) var(--y-0), var(--c-0) var(--s-start-0), transparent var(--s-end-0));
+    animation: body 15s linear infinite normal;
+    background-blend-mode: normal;
+    will-change: transform, opacity;
+    contain: paint;
+    mask-image: repeating-linear-gradient(45deg, #fff, #fff 1px, transparent 1px, transparent 10px), repeating-linear-gradient(135deg, #fff, #fff 1px, transparent 1px, transparent 10px);
+}
